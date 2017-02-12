@@ -38,8 +38,9 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected List<ReactPackage> getPackages() {
+        // getUseDeveloperSupport : won't use
         return Arrays.<ReactPackage>asList(
-            new MainReactPackage()
+            new MainReactPackage() 
         );
     }
 }
