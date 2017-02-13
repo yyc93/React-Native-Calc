@@ -17,8 +17,6 @@ This project uses libraries and tools like:
 - es6 syntax and [babel](https://babeljs.io)
 - [react](https://facebook.github.io/react) for the Website App and Desktop App,
 - [react-native](https://facebook.github.io/react-native) for the iOS & Android Apps
-- [NW](http://nwjs.io) to package the Desktop App
-- [Electron](http://electron.atom.io) to package the Desktop App
 - [flux](https://facebook.github.io/flux) to organize the data flow management
 - [css-loader](https://github.com/webpack/css-loader) to integrate the styles in the builds
 - [grunt](http://gruntjs.com) to create the builds
@@ -70,9 +68,9 @@ export default class Screen extends Base {
 
 - `npm install` to install all the dependencies, React and React Native among others.
 
-### With some versions of npm (>=v3.3.10 <=v3.6.0)
+### With some versions of npm (>=v3.3.10 <=v3.7.0)
 
-Some builds from npm included bugs while `npm install`. So if you are using a npm version within the range form 3.3.10 to 3.6.0 included, you must run `npm install` twice. Those versions including npm v3.3.12 are the ones bundled by default with node from version v5.1.0 to v5.5.0.
+Some builds from npm included bugs while `npm install`. So if you are using a npm version within the range form 3.3.10 to 3.7.0 included, you must run `npm install` twice. Those versions including npm v3.3.12 are the ones bundled by default with node from version v5.2.0 to v5.5.0.
 
 - `npm install npm`
 - `npm install npm` run it twice, because of the packages won't be installed after the first run [#10985](https://github.com/npm/npm/issues/10985)
@@ -84,8 +82,8 @@ Some builds from npm included bugs while `npm install`. So if you are using a np
 #### iOS
 
 - OS X
-- Xcode 6.3 or higher is recommended (Xcode only runs on Mac).
-- Homebrew is the recommended way to install node, watchman, and flow.
+- Xcode 7.3 or higher is recommended (Xcode only runs on Mac).
+- We used Homebrew to install node, watchman, and flow.
 - `brew install node`
 - `brew install watchman`. We recommend installing watchman, otherwise you might hit a node file watching bug.
 - `brew install flow`. If you want to use flow.
